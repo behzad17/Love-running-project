@@ -57,10 +57,9 @@ nav{
     position: absolute;
     background-color: #ffffff;
     width: 100%;
-    box-shadow: 0 2px 2px #3a3a3a;
-    padding: 0 1rem;
     left: 0;
-    z-index: 99;
+    padding: 0 1rem;
+    box-shadow: 0 2px 2px #3a3a3a;
     display: none;
     top: 100%;
 }
@@ -85,4 +84,21 @@ main{
 /* footer*/
 footer{
     background-color: orange;
+}
+/*media query, tablet and larger(768px and up)*/
+@media screen and (min-width: 768px) {
+    /*header*/
+    nav{
+        display: block;
+        position: relative;
+        box-shadow: none;
+        width: fit-content;
+        padding-right: 1rem;
+    }
+    #menu{
+        display: flex;
+    }
+    #menu li{
+        padding: 1rem;
+    }
 }
